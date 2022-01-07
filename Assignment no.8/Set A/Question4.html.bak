@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<input type="text" placeholder="Enter Number"id="tex">
+<input type="submit" onclick="display()">
+<b id="ans"></b>
+</body>
+
+<script>
+
+function display(){
+
+var x=document.getElementById("tex").value;
+var i,a,b=1;
+var arr=[3];
+
+for(i=0;x!=0;i++)
+{
+ a=x%10;
+ arr[i]=parseInt(a);
+ x=parseInt(x/10);
+ b++;
+}
+
+for(i=b;i>=0;i--)
+{
+document.write(arr[i]);
+}
+}
+
+</script>
+
+
+
+</html>
