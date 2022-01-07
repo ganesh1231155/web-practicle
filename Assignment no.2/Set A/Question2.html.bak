@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+</style>
+<body style="background-image: url('C:\Users\user\Desktop\web practical\files regarding this\windowslogo.png')">
+<img src="C:\Users\user\Desktop\web practical\files regarding this\collagelogo.jpg" width="150"m height="150">
+<p style="font-size:30px; text-align:center;color:red;background-color:orange;">NEW ARTS, COMMARCE AND SCIENCE COLLAGE AHMEDNAGAR</p>
+<b style=" text-align:center;">ADDRESS:   Lal, Taki Rd, Tarakpur, Ahmednagar, Maharashtra 414001</b><hr>
+<marquee style="background-color:yellow;font-size:20px;">CONTACT  US: 5749878475  OR  8743518544</marquee>
+<p style="font-size:30px;color:red;">Courses:-</p>
+<b style="font-size:15px;color:green;">*BCA<br>*BCS<br>*11th-12th(Science/Commarce/Arts)<br>*Low<br>*Graduation<br></b>
+<br><br>
+<img src="C:\Users\user\Desktop\web practical\files regarding this\campus.jpg" width="400"m height="400">
+<img src="C:\Users\user\Desktop\web practical\files regarding this\campus1.jpg" width="400"m height="400">
+<img src="C:\Users\user\Desktop\web practical\files regarding this\building.jpg" width="400"m height="400">
+
+</body>
+
+
+</html>
