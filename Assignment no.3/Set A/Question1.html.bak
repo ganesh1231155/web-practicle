@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<h1 style="text-align:center; font-size:70px;color:white;">RIANBOW COLORS</h1>
+<body style="text-align:center;background-color:black;">
+ <ol style="font-size:45px;text-align:center;">
+   <li style="color:red;">RED</li>
+   <li style="color:orange;">ORANGE</li>
+   <li style="color:yellow;">YELLOW</li>
+   <li style="color:green;">GREEN</li>
+   <li style="color:blue;">BLUE</li>
+   <li style="color:indigo;">INDIGO</li>
+   <li style="color:violet;">VIOLET</li>
+ </ol>
+
+</body>
+
+</html>

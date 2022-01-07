@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html style="font-size:20px;">
+<style>
+table,th,td{
+border:1px solid black;
+border-collapse:collapse;
+}
+</style>
+<table>
+<thead>
+<tr>
+
+<td>Color</td>
+<td>Name</td>
+<td>Hexadecimal</td>
+<td>RGB value</td>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="background-color:salmon"></td>
+<td>salmon</td>
+<td>FA8072</td>
+<td>250-128-114</td>
+</tr>
+
+<tr>
+
+<td style="background-color:gold;"></td>
+<td>Gold</td>
+<td>FFD700</td>
+<td>250-215-0</td>
+
+</tr>
+
+</tbody>
+</table>
+
+</html>
