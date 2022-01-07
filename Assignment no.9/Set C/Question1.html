@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;font-size:40px;">
+<input type="number" id="tex"placeholder="Enter a number"><br>
+<input type="submit" onclick="table()">
+
+</body>
+<script>
+function table(){
+var x=document.getElementById("tex").value;
+for(var i=1;i<=10;i++)
+{
+var a=parseInt(x*i);
+
+document.write('<b id="ans" style="text-align:center; font-size:40px;">' +x+"*"+i+"="+a+"<br>"+ '</b>');
+}
+}
+</script>
+
+</html>

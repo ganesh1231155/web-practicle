@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;font-size:40px;color:red">
+
+</body>
+<script>
+var d=prompt("Enter a date. format(YYYY/MM/DD)");
+const date= new Date(d);
+var month= date.getMonth()+1;
+var day= date.getDate();
+
+if( month==1 ) {
+if( day==1 ) {
+document.write( "HAPPY NEW YEAR ");
+}
+if(day==14 ) {
+
+document.write( "HAPPY  MAKARSANKRANTI." );
+}
+}else
+if(month==12 ){
+
+if(day==25 ) {
+document.write("MARRY CHRISTMAS");
+
+}
+}
+else
+{
+document.write("Have a good day.");
+}
+</script>
+</html>

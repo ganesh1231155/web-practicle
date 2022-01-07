@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<body>
+<input type="date" id="dat">
+<input type="submit" onclick="age()">
+<b id="ans"></b>
+</body>
+<script>
+function age()
+{
+const c=prompt("Enter DOB format(YYYY/MM/DD)");
+const d=new Date(c);
+const b=new Date();
+
+var by=b.getYear();
+var dy=d.getYear();
+var bm=b.getMonth();
+var dm=d.getMonth();
+var bd=b.getDate();
+var dd=d.getDate();
+if(dm >bm)
+{
+dy=dy+1;
+}
+else
+if(dm==bm)
+{
+ if(dd>bd)
+ {
+     dy=dy+1;
+ }
+}
+var a=by-dy;
+document.getElementById("ans").innerHTML="age is: "+a+"Years";
+}
+
+</script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body style="font-size:30px;text-align:center;">
+Minimum number of an array <input type="submit" onclick="mini()"><br><br>
+Maximum number of an array <input type="submit" onclick="max()"><br><br>
+Sum of numbers of an array <input type="submit" onclick="sum()"><br><br>
+Average of numbers of  an array <input type="submit" onclick="ave()"><br><br>
+<br><br>
+<b id="ans"></b>
+</body>
+<script>
+var arr=[5,3,4,2,1,6];
+var b;
+function mini()
+{
+for(var i=0;i<5;i++)
+{
+for(var j=i+1;j<5;j++)
+{
+if(arr[i]>arr[j])
+{
+var a=arr[i];
+arr[i]=arr[j];
+arr[j]=a;
+}
+}
+}
+document.getElementById("ans").innerHTML="<br>Minimum number in array is :"+arr[0];
+}
+function max()
+{
+for(var i=0;i<5;i++)
+{
+for(var j=i+1;j<5;j++)
+{
+if(arr[i]>arr[j])
+{
+var a=arr[i];
+arr[i]=arr[j];
+arr[j]=a;
+}
+}
+}
+document.getElementById("ans").innerHTML="<br>Minimum number in array is :"+arr[5];
+}
+function sum()
+{
+b=0;
+for(var i=0;i<6;i++)
+{
+b=parseInt(b+arr[i]);
+}
+document.getElementById("ans").innerHTML="<br>Sum of number in array is :"+b;
+}
+function ave()
+{
+document.getElementById("ans").innerHTML="<br>average of number in array is :"+(b/6);
+}
+</script>
+</html>

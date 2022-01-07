@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stack in js</title>
+</head>
+<body>
+    <h1>Stack</h1>
+
+   
+        
+            1.Push the element in stack<input type="submit" onclick="push()"><br><br>
+            2.Pop the element from stack<input type="submit" onclick="pop()"><br><br>
+       		3.Display the stack<input type="submit" onclick="display()"><br><br>
+           
+<h1>Queue</h1>
+		   1.Insert an element inqueue<input type="submit" onclick="enq()"><br><br>
+          2.Delete an element from queue<input type="submit" onclick="deq()"><br><br>
+           3.Display the contents of queue<input type="submit" onclick="displayq()"><br><br>
+    <div id="ans"></div>
+</body>
+<script>
+   
+
+    var stack1 = [];
+    var to1 = -1;
+    var queue = [];
+    var front = -1;
+    var rare = -1;
+        function push(){
+            
+               var element = prompt("Enter element in the stack");
+                ++to1;
+                stack1[to1] = element;
+                console.log(to1);
+            
+			}
+            function pop(){ 
+			  if(to1==-1)
+			  {
+			     document.getElementById("ans").innerHTML="Can't pop, stack is empty.";
+				 stack1=[];
+				stack1.splice(0, );
+			  }
+			  else
+			  {
+			  document.getElementById("ans").innerHTML="The element "+stack1[to1]+" is poped";
+               
+			   to1--;
+			   
+			   stack1.length=stack1.length-1;
+			   console.log(to1);
+			  }
+			}
+			function display(){
+              if(to1<0)
+			  {
+			      document.getElementById("ans").innerHTML="Stack is enmpty";
+				  stack1.splice(0, );
+			  }
+			  else
+               {
+                
+				//document.write("Elements of stack are: ");
+              
+				  
+				 
+				  stack1.reverse();
+				  document.getElementById("ans").innerHTML="Elements of stack are:"+stack1.join(", ");
+                  
+					stack1.reverse();
+              }
+			  }
+            function enq()
+            {
+
+                if(front == -1 && rare == -1)
+                {
+                    front++;
+                    rare++;
+                    var element = prompt("Enter element in the stack");
+                    queue[rare] = element;
+                }
+                else
+                {
+                    rare++;
+                     var element = prompt("Enter element in the stack");
+                    queue[rare] = element;
+
+                }
+
+            }
+            function deq()
+			
+            {
+                if(front == -1 && rare == -1)
+                {
+                    
+                    document.getElementById("ans").innerHTML="Can't delete, Queue is empty.";
+					queue=[];
+					queue.splice(-1, );
+                }
+                else if(queue.length==0)
+				{
+				 document.getElementById("ans").innerHTML="Can't delete, Queue is empty.";
+					queue=[];
+					queue.splice(-1, );
+				}
+				else
+                {   console.log("d"+queue.length);
+				    document.getElementById("ans").innerHTML="The element"+queue[front]+" has been deleted";
+                    front++;
+					
+                }
+            }
+            function displayq()
+            {
+			if(queue.length==1)
+			{
+			   document.getElementById("ans").innerHTML="Can't Display, queue is empty.";
+			   queue.length=queue.length-front;
+			   console.log("dsif"+queue.length);
+			   queue.splice(-1, );
+			}
+			else
+			{
+				queue.reverse();
+				queue.length=queue.length-front;
+				front=0;
+				console.log("len"+queue.length);
+				queue.reverse();
+                    document.getElementById("ans").innerHTML="Elements of Queue are:"+queue.join(", ");
+                
+            }
+			}
+
+</script>
+</html>
