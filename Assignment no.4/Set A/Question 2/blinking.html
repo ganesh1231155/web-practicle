@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Blinking feature using JavaScript </title>
+    <style>
+        #blink {
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br><p id="blink">THIS IS A BLINKING TEXT></p>
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1000);
+    </script>
+</body>
+</html>

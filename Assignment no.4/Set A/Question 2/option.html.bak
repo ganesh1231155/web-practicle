@@ -1,0 +1,107 @@
+<!DOCTPE html>
+<html>
+<style>
+*{
+box-sizing:border-box;
+}
+header{
+font-size:50px;
+padding:0px;
+}
+nav{
+float:left;
+font-size:30px;
+width:50%;
+padding:10px;
+ height:300px;
+}
+article{
+float:left;
+width:50%;
+font-size:30px;
+padding:10px;
+ height:300px;
+}
+footer{
+font-size:50px;
+padding:0px;
+}
+body,header,nav,article,na,articl,n{
+border:1px solid black;
+border-collapse:collapse;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px)
+ {
+  nav, article 
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+na{
+float:left;
+font-size:30px;
+width:33.33%;
+padding:10px;
+ height:300px;
+}
+articl{
+float:left;
+font-size:30px;
+width:33.33%;
+padding:10px;
+ height:300px;
+}
+n{
+float:left;
+font-size:30px;
+width:33.33%;
+padding:10px;
+ height:300px;
+}
+@media (max-width: 600px)
+ {
+  na, articl,n 
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<body>
+<header>
+<iframe src="name&add.html"  height="300" width="1880"  title="Iframe Example"></iframe>
+</header>
+<section>
+
+<nav>
+
+     <iframe src="Qualification.html"  height="290" width="925"title="Iframe Example"></iframe>
+
+</nav>
+
+<article>
+
+         <iframe src="link.html"  height="290" width="925" title="Iframe Example"></iframe>
+
+</article>
+
+</section>
+<footer>
+<na>
+<iframe src="scrolling.html"  height="290" width="616" title="Iframe Example"></iframe>
+</na>
+<articl>
+<iframe src="blinking.html" height="290" width="616" title="Iframe Example"></iframe>
+</articl>
+<n>
+<iframe src="image.html"  height="290" width="616"title="Iframe Example"></iframe>
+</n>
+</footer><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

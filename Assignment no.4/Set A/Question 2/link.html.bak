@@ -1,0 +1,11 @@
+<html>
+
+<body>
+
+<a href="https://www.w3schools.com/html/default.asp"target="iframe_a">W3 School</a><br>
+<a href="https://www.youtube.com/" target="iframe_a">youtube</a><br>
+<a href="https://www.tutorialspoint.com/cprogramming/index.htm"target="iframe_a">C turorial point.</a><br>
+<a href="https://www.tutorialspoint.com/python/index.htm"target="iframe_a">python turorial point.</a><br>
+</body>
+
+</html>
