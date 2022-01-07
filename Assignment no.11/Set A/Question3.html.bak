@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<style>
+*{
+background-repeat:no-repeat;
+}
+html{
+width:100%;
+height:100%;
+}
+body{
+height:100%;
+display:flex;
+border-collapse:collapse;
+}
+.div{
+margin:auto;
+width:1000px;
+height:700px;
+border:2px solid black;
+
+}
+header{
+font-size:30px;
+font-weight:bold;
+}
+p{
+font-size:17px;
+}
+nav{
+float:left;
+font-size:30px;
+width:30%;
+padding:10px;
+ height:70%;
+ border:2px solid black;
+ padding:1rem;
+}
+article{
+float:left;
+width:62%;
+font-size:30px;
+padding:10px;
+ height:570px;;
+  border:2px solid black;
+ padding:1rem;
+}
+@media (max-width: 600px)
+{
+  nav, article 
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+.div1{
+width:90%;
+height:40%;
+padding:1rem;
+border:1px solid black;
+}
+</style>
+
+<body>
+<div class="div">
+<header>
+The 5 Best Goa Resorts<p>Check out our pick of great resort in Goa</p>
+</header>
+<section>
+    <nav>
+	<div class="div1">
+	<h1>Filter by:</h1><hr>
+	Review score<br>
+	<input type="checkbox" id="superb:9+" name="vehicle1" value="superb:9+">
+  <label for="superb:9+"> superb: 9+</label><br>
+  <input type="checkbox" id="Very good:8+" name="vehicle2" value="Very good:8+">
+  <label for="Very good:8+"> Very good: 8+</label><br>
+  <input type="checkbox" id="Good:7+" name="vehicle3" value="Good:7+">
+  <label for="Good:7+"> Good: 7+</label><br>
+  <input type="checkbox" id="pleasant:6+" name="vehicle3" value="pleasant:6+">
+  <label for="pleasant:6+"> pleasant: 6+</label><br><br>
+	</div>
+	</nav>
+	<article>
+    <div class="div2">
+	
+	</div>
+	</article>
+</section>
+</div>
+</body>
+<script>
+</script>
+</html>
