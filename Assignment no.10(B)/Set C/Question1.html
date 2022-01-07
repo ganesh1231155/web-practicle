@@ -1,0 +1,30 @@
+<!DOCYYPE html>
+<html>
+<style>
+body{
+text-align:center;
+}
+.submit{
+width:25%;
+height=10%;
+background-color:#32CD32;
+border-radius:15px;
+</style>
+<body id="bod"class="bod"style="background-color:white;">
+<br><br><br><input type="submit" onclick="color()"class="submit">
+</body>
+<script>
+function color()
+{
+if(document.getElementById('bod').style.backgroundColor=='white')
+{
+ document.getElementById('bod').style.backgroundColor='Red';
+
+}
+else
+{
+document.getElementById('bod').style.backgroundColor='white';
+}
+}
+</script>
+</html>

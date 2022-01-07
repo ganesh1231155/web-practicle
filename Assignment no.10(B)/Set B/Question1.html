@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<style>
+*
+{
+background-repeat:no-repeat;
+
+}
+html
+{
+width:100%;
+height:100%;
+}
+body
+{
+height:100%;
+display:flex;
+border-collapse:collapse;
+}
+.div1
+{
+margin:auto;
+width:400px;
+height:300px;
+border:3px solid black;
+border-radius:15px;
+font-weight:bold;
+font-size:20px;
+padding:1rem 1rem;
+
+}
+.div2
+{
+margin:auto;
+width:400px;
+height:400px;
+border:3px solid black;
+border-radius:15px;
+font-weight:bold;
+font-size:20px;
+/*padding:1rem 1rem;*/
+
+}
+.text{
+border-radius:5px;
+}
+.table2{
+border:3px solid black;
+border-collapse:collapse;
+margin:auto;
+text-align:center;
+width:90%;
+}
+.submit{
+width:90%;
+height:15%;
+border-radius:6px;
+}
+</style>
+<body>
+
+<div class="div1" >
+<table class="table1">
+<tr><td>Name of Employee:</td><td>
+   <input type="text" id="text1"class="text"></td>
+</tr>
+<tr><td>Department:</td><td>
+    <input type="text" id="text2" class="text"></td>
+	
+</tr>
+<tr><td>Designation:</td><td>
+     <input type="text" id="text3"class="text"></td>
+</tr>
+<tr><td>Basic Salary:</td><td>
+    <input type="text" id="text4" class="text"></td>
+</tr>
+<tr><td>HRA</td><td>
+     <input type="text" id="text5"class="text"></td>
+</tr>
+<tr><td>DA</td><td>
+    <input type="text" id="text6" class="text"></td>
+</tr>
+</table>
+<br><br>
+<input type="submit" onclick="calculate()"class="submit"><br> 
+</div>
+
+<div class="div2" id="div2"style="display:none;">
+<h1 style="text-align:center;">Payment slip</h1>
+<p style="text-align:center;" id="name">Name: </p>
+<p id="dept">Department: </p>
+<p id="des">Designation: </p>
+
+<table class="table2">
+<tr class="table2">
+    <td class="table2">Basic salary</td><td class="table2"><b id="salary">&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</b></td>
+</tr>
+<tr class="table2">
+    <td class="table2">HRA</td><td class="table2"><b id="hra">&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</b></td>
+</tr>
+<tr class="table2">
+    <td class="table2">DA</td><td class="table2"><b id="da">&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</b></td>
+</tr>
+<tr class="table2">
+    <td class="table2">Total Salary</td><td class="table2"><b id="tsalary">          </b></td>
+</tr>
+</table>
+
+<div>
+
+</body>
+<script>
+function calculate()
+{
+ var name=document.getElementById("text1").value;
+ var dept=document.getElementById("text2").value;
+ var des=document.getElementById("text3").value;
+ var basic=document.getElementById("text4").value;
+ var hra=document.getElementById("text5").value;
+ var da=document.getElementById("text6").value;
+ var dis=document.getElementById("div2");
+ var total=parseFloat(basic)+parseFloat(hra)+parseFloat(da);
+ console.log(total);
+ document.getElementById("name").innerHTML="Name:&#160"+name;
+ document.getElementById("dept").innerHTML="Department:&#160"+dept;
+ document.getElementById("des").innerHTML="Designation:&#160"+des;
+ document.getElementById("salary").innerHTML=basic;
+ document.getElementById("hra").innerHTML=hra;
+ document.getElementById("da").innerHTML=da;
+ document.getElementById("tsalary").innerHTML=total;
+
+ 
+ 
+ 
+ 
+ 
+ dis=dis.style.display;
+ if(dis=="none")
+ {
+    document.getElementById("div2").style.display="block"; 
+	}
+}
+</script>
+</html>

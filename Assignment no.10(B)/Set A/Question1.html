@@ -1,0 +1,34 @@
+<! DOCTYPE html>
+<html>
+<body style="text-align:center;font-size:30px;">
+<br><br>
+<input type="email" placeholder="Enter Email" id="email" style="width:25%;height:5%;"><br><br>
+<input type="submit" onclick="valid()">
+<b id="ans"></b>
+</body>
+<script>
+
+function valid(){
+var x=document.getElementById("email").value;
+if(x==""||x==null)
+{
+alert("Email could not be empty.");
+}
+else
+{
+var format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w)*(\.\w{2,3})+$/;
+if(x.match(format))
+{
+//document.write(x+" is valid email.");
+   console.log(x+" is valid email.");
+}
+else
+{
+//alert("Entered Email is incurect.");
+document.write(x+" is invalid email.");
+}
+}
+}
+</script>
+
+</html>
