@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+        <div class="div"id="div">
+            <p id="display"></p>
+            <button onclick="reset()"> C</button>
+			<button onclick="back()"><i class="material-icons" style="font-size:36px">backspace</i></button>
+			<button onclick="rotate()"> </button>
+			<button onclick="insert('/')"> /</button>
+            <button onclick="insert(7)"> 7</button>
+            <button onclick="insert(8)"> 8</button>
+            <button onclick="insert(9)"> 9</button>
+            <button onclick="insert('*')"> *</button>
+            <button onclick="insert(4)"> 4</button>
+            <button onclick="insert(5)"> 5</button>
+            <button onclick="insert(6)"> 6</button>
+            <button onclick="insert('-')"> -</button>
+            <button onclick="insert(1)"> 1</button>
+            <button onclick="insert(2)"> 2</button>
+            <button onclick="insert(3)"> 3</button>
+            <button onclick="insert('+')"> +</button>
+            <button onclick="insert('.')"> .</button>
+			<button onclick="insert(0)"> 0</button>
+			<button onclick="histry()"> h</button>
+            <button onclick="insert('=')"> =</button>
+            
+            
+            
+        </div>
+    
+</body>
+<script>
+var his=[''];
+ var dis=[''];
+ var text=[''];
+ var x=0;
+ function insert(n)
+ {
+ if(n=="=")
+ {
+ calculate();
+ }
+ else
+ {
+     dis=dis+n;
+	 his=his+n;
+	 document.getElementById("display").innerHTML=""+dis;
+ }
+ 
+ }
+ function calculate()
+ { 
+  document.getElementById("display").innerHTML=dis+"="+ eval(dis);
+	
+	dis= eval(dis);
+	console.log(dis);
+	his=his+"="+eval(dis)+"<br>";
+ }
+ function reset()
+ {
+ dis="";
+  document.getElementById("display").innerHTML=""+dis;
+ }
+ 
+ function back()
+ {
+ console.log(dis.length);
+    text=dis.slice(0,dis.length-1);
+	dis=text;
+	console.log(dis);
+	console.log(dis.length);
+	document.getElementById("display").innerHTML=""+dis;
+
+ }
+ function histry()
+ {
+     document.getElementById("display").innerHTML="History:<br>"+his;
+ }
+ function rotate()
+ {
+ var z=document.getElementById("div").style.transform = "rotate(90deg)";
+ document.getElementById("div").style.transform =z+"rotate(90deg)";
+ }
+</script>
+<style>
+    p{
+        padding: 10px ;
+        border: 3px solid rgb(199, 198, 198);
+        /* height: 30px; */
+        margin: 1px;
+        border-radius: 10px;
+        font-size: large;
+        font-weight: bold;
+        font-family: cursive;
+        color: white;
+        
+    }
+    p:hover{
+        border-color: rgb(170, 166, 166);
+    }
+    .align{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    button{
+       background: linear-gradient(145deg,purple,yellow);
+        color: white;
+        border: 0px;
+        border-radius: 5px;
+        height: 50px;
+        margin: 1px;
+        font-family: cursive;
+        font-size: large;
+        box-shadow: 0px 10px 15px 0.4px  rgb(109, 0, 109);
+    }
+    button:hover{
+        background: linear-gradient(160deg, yellow,green);
+		
+        cursor: pointer; 
+        font-size: x-large;
+    }
+	html{
+	width:100%;
+	height:100%;
+	}
+	body{
+	height:100%;
+	display:flex;
+	}
+    .div{
+        display: grid;
+        width: 30vw;
+		margin:auto;
+			background-image:url("calculator.jpg");
+		border-radius: 35px;
+        /* box-shadow: 0px 15px 50px 0.4px  rgb(109, 0, 109); */
+        box-shadow: 0px 20px 45px 0.4px  rgb(129, 129, 129);
+        /* box-shadow: ; */
+        /* border: 1px solid black; */
+        padding: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 1fr 1fr;
+        column-gap: 13px;
+        row-gap: 13px;
+    }
+    #display{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+</style>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+* 
+{
+  background-repeat: no-repeat;
+}
+html 
+{
+  height: 100%;
+  width: 100%;
+  
+}
+
+body
+{
+  height: 100%;
+  display: flex;
+ border-collapse:collapse;
+}
+
+
+.div1{
+  margin: auto; 
+  width: 400px;
+  height: 550px;
+  padding: 0.75rem 1.75rem;
+  font-size: 20px;
+  border:3px solid black;
+}
+
+h1
+{
+ text-align:center;
+}
+.text{
+width:100%;
+height:5%;
+background-color:#f1f1f1;
+border:2px solid white;
+
+}
+button
+{
+  width:100%;
+  height:10%;
+  background-color:#32CD32;
+  color:black;
+  font-size:20px;
+}
+</style>
+
+
+
+
+<body>
+<div class="div1">
+
+<h1>Registration Form</h1><hr><br>
+
+<b>Email:<br> </b>
+<input type="email" class="text" placeholder="Enter Email" id="email"><br><br>
+<b>Password:<br>
+<input type="password" class="text" placeholder="Enter Password" id="pass1"required></b><br><br>
+<b>Repeat Password:<br>
+<input type="password" class="text" placeholder="Enter Password" id="pass2"required></b><br><br>
+<b style="font-size:15px;"><a href="#">Terms & conditions</a></b><br><br>
+<button type="submit" class="button"onclick="cheak()">Register.</button><br><br><br>
+
+<b style="font-size:25px;">Already have an account! <a href="#">Sign in.</a></b>
+
+</div>
+</body>
+<script>
+function cheak(){
+var x=document.getElementById("email").value;
+if(x==""||x==null)
+{
+ alert("E-mail not be empty.");
+}
+
+var y=document.getElementById("pass1").value;
+if(y==""||y==null)
+{
+ alert("Password not be empty.");
+}
+var z=document.getElementById("pass2").value;
+if(z==""||z==null)
+{
+ alert("Repeated Password not be empty.");
+}
+if(y==z)
+{
+ 
+}
+else
+{
+alert("Both password must be same.");
+}
+console.log(x);
+console.log(y);
+console.log(z);
+var format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w)*(\.\w{2,3})+$/;
+if(x.match(format))
+{
+
+}
+else{
+alert("Entered Email is incurect.");
+}
+}
+</script>
+</html>

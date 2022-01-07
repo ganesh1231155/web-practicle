@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="submit" onclick="func()">
+</body>
+<script>
+function func(){
+var x=prompt("Enter Email");
+var format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w)*(\.\w{2,3})+$/;
+if(x.match(format))
+{
+   document.write(x+" is valid email.");
+}
+else
+{
+alert("Entered Email is incurect.");
+}
+}
+
+</script>
+</html>

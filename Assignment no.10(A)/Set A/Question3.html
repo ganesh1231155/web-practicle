@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+</body>
+<script>
+var x=prompt("Enter Email");
+var format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w)*(\.\w{2,3})+$/;
+if(x.match(format))
+{
+   document.write(x+" is valid email.");
+}
+else
+{
+//alert("Entered Email is incurect.");
+document.write(x+" is invalid email.");
+}
+</script>
+</html>

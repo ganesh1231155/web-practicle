@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body style="font-size:30px;text-align:center;">
+<input type="text" id="tex" placeholder="Enter Number"><br>
+
+<b>Square of number </b><input type="submit" onclick="square()"><br><br>
+<b>Root of number </b><input type="submit" onclick="root()"><br><br>
+<b>Power of number </b><input type="submit" onclick="power()"><br><br>
+<b>Absolute Value </b><input type="submit" onclick="absolute()"><br><br>
+<br><br><b id="ans"></b>
+</body>
+<script>
+function square()
+{
+var x=document.getElementById("tex").value;
+
+if(isNaN(x))
+{
+   document.write(x+" is not a number");
+}
+else
+{
+
+var x=document.getElementById("tex").value;
+var a=parseInt(x*x);
+document.getElementById("ans").innerHTML="The square of a number "+x+"  is: "+a+".";
+} 
+}
+
+function root()
+{
+var x=document.getElementById("tex").value;
+
+if(isNaN(x))
+{
+   document.write(x+" is not a number");
+}
+else
+{
+var x=document.getElementById("tex").value;
+var a=Math.sqrt(x);
+document.getElementById("ans").innerHTML="The root of a number "+x+"  is: "+a+".";
+}
+}
+
+function power()
+{
+var x=document.getElementById("tex").value;
+
+if(isNaN(x))
+{
+   document.write(x+" is not a number");
+}
+else
+{
+var x=document.getElementById("tex").value;
+var a=prompt("Enter Power");
+var b=Math.pow(x,a);
+
+document.getElementById("ans").innerHTML="The"+a+"power of a number "+x+"  is: "+b+".";
+}
+}
+function absolute()
+{
+var x=document.getElementById("tex").value;
+
+if(isNaN(x))
+{
+   document.write(x+" is not a number");
+}
+else
+{
+var x=document.getElementById("tex").value;
+var a=Math.abs(x);
+document.getElementById("ans").innerHTML="The Absolute value of  number "+x+"  is: "+a+".";
+}
+}
+</script>
+</html>
