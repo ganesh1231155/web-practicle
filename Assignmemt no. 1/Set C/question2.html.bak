@@ -1,0 +1,26 @@
+<!DOCTYPEhtml>
+<html>
+<style>
+body
+ {
+ background-image:url("C:\Users\Sai\Desktop\web practical\files regarding this\map.jpg");
+}
+b{
+text-align:center;
+color:blue;
+}
+.bottomleft{
+position:absolude;
+bottom:5px;
+text-align:center;
+}
+</style>
+<body>
+ <h1 style="text-align:center;color:red;">MY CITY</h1>
+<b class="bottomleft">newarts commarce and science collage
+<br>
+government collage of politechnic</b><br>
+<marquee style="color:red;font-weight:bold;">I  LOVE  NAGAR</marquee>
+<b>Bhuikot Fort<img src="bhuikotkilla.jpg" width="300" height="200">Map of A.nagar<img src="map.jpg" width="300" height="200"><br>Chandbibi ka Malal<img src="chandbibimahal.jpg" width="300" height="200"> ...........<img src="ilovenagar.jpeg" width="300" height="200"></b>
+</body>
+</html>

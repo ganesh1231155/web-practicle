@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<style>
+#blink{
+font-size:60px;
+font-weight:bold;
+color:white;
+}
+body{
+font-size:30px;
+}
+p{
+font-size:60px;
+}
+</style>
+<body style="background-color:red;text-align:center;">
+<p id="blink">WORNING</p>
+<script type="text/javascript">
+var blink=getElementById('blink');
+function my(){function fun(){
+setInterval(blink.style.opacity=(blink.style.opacity==0 ? 1:0));
+},1000);
+
+</script>
+<marquee>read the message</marquee>
+</body>
+</html>

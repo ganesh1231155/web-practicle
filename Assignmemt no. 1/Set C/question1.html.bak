@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1{
+text-align:center;
+font-size:50px;
+color:red;
+}
+b{
+ font-size:20px;
+}
+</style>
+<head> 
+<h1 style="text-align:center">web designing sylabus</h1>
+<p>for additional info <a href="http://www.unipune.ac.in/university_files/syllabi.htm">click here!</a></p><hr
+</head>
+<main> 
+<p>symbol of sppu... <img  src="C:\Users\Sai\Desktop\web practical\files regarding this\image for A1 setC Q1.jpg" width="40" height="40">
+<br><br><a href="http://collegecirculars.unipune.ac.in/sites/documents/Syllabus2021/TY%20BCA_02.07.2021.pdf?Mobile=1&Source=%2Fsites%2Fdocuments%2F%5Flayouts%2Fmobile%2Fview%2Easpx%3FList%3De863f80e%252D3186%252D47db%252D9e5d%252D75b1718a8bab%26View%3D62720b05%252D0c86%252D4245%252D9b8c%252D7dab74238a4e%2FTY%2520BCA%252002%2E07%2E2021%2Epdf%26CurrentPage%3D1"> To download pdf </a> <hr>
+
+</main>
+<body>
+<b>Chapter 1</b>
+<br>
+<p>Name: Introduction of web.</p><br><hr>
+<b>Chapter 2</b><br>
+<p>Name: Advance HTML Tags.</p><br><hr>
+<b>Chapter 3</b><br>
+<p>Name: Java Script.</p><br><hr>
+<b>Chapter 4</b><br><br>
+<p>Name: Arrays in PHP.</p><br><hr>
+</body>
+
+</html>
