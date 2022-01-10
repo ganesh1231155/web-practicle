@@ -196,7 +196,7 @@ display:grid;
 grid-template-rows: auto auto;
 font-size:20px;
 width:1300px;
-height:600px;
+height:800px;
 border:1px solid black;
 background-color:white;
 
@@ -221,7 +221,7 @@ background-color:white;
 .div1{
 padding:0.5rem;
 border:1px dotted white;
-height:53vh;
+height:auto;
 overflow:auto;
 background-color:white;
 
@@ -229,7 +229,7 @@ background-color:white;
 }
 .div2{
 border:1px dotted white;
-height:53vh;
+height:auto;
 overflow:auto;
 padding:0.5rem;
 background-color:white;
