@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<style>
+*{
+background-repeat:no-repeat;
+}
+html{
+width:100%;
+height:100%;
+}
+body{
+height:100%;
+display:flex;
+}
+.main{
+border:1px solid black;
+width:200vh;
+height:90vh;
+display:grid;
+grid-template-columns: 32% 1% 32% 1% 32%;
+}
+.diva{
+border:1px solid gray;
+display:grid;
+grid-template-rows: 50% 50%;
+}
+.div1{
+border:1px dotted white;
+overflow:hidden;
+
+
+}
+.div2{
+border:1px dotted white;
+text-align:center;
+font-size:180%;
+padding:0.5rem;
+}
+.submit{
+width:40%;
+height:15%;
+background-color:#ff8c00;
+color:white;
+}
+</style>
+<body>
+
+<div class="main">
+
+	<div class="diva">
+	
+		<div class="div1">
+			
+			<img src="F:\web practical\files regarding this\veg1.png"width="100%"height="100%">
+			
+		</div>
+		
+		<div class="div2">
+		
+			Mini Vegetable Basket-3.5 to 4.5 kg(7M-MINI4)<br><p style="color:blue;">97 Reviews</p>&#8377;270.00<br><input type="submit" value="Add to Cart" class="submit">
+			
+		</div>
+	
+	</div>
+	<div></div>
+	
+	<div class="diva">
+	
+		<div class="div1">
+			
+			<img src="F:\web practical\files regarding this\veg2.png"width="100%"height="100%">
+			
+		</div>
+		
+		<div class="div2">
+		
+			Medium Vegetable Basket-6 to 6.5 kg(7M-MED6)<br><p style="color:blue;">31 Reviews</p>&#8377;379.00<br><input type="submit" value="Add to Cart" class="submit">
+			
+		</div>
+	
+	</div>
+	
+	<div></div>
+	
+	<div class="diva">
+	
+		<div class="div1">
+			
+			<img src="F:\web practical\files regarding this\veg3.png"width="100%"height="100%">
+			
+		</div>
+		
+		<div class="div2">
+		
+			Mega Vegetable Basket-8 to 9.5 kg(7M-MEGA9)<br><p style="color:blue;">51 Reviews</p>&#8377;499.00<br><input type="submit" value="Add to Cart" class="submit">
+			
+		</div>
+	
+	</div>
+	
+	
+
+
+
+
+</div>
+
+</body>
+<script>
+</script>
+</html>
